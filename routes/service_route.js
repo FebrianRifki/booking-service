@@ -6,6 +6,6 @@ const router = express.Router();
 
 router.get('/get-session', SessionController.getSessions);
 
-router.get('/get-available-employees', EmployeeController.getAllEmployees);
+router.post('/get-available-employees', EmployeeController.getAllEmployees);
 
 export default router;

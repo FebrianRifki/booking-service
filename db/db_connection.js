@@ -3,7 +3,8 @@ import { Sequelize } from 'sequelize';
 const sequelize = new Sequelize('booking-test', 'root', '', {
   host: 'localhost',
   port: 3306,
-  dialect: 'mysql',
+  dialect: 'mysql', 
+  logging: true
 });
 
 const testConnection = async () => {
